@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Getting Started with Jamming
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This was created as a project in the [Codecademy Fullstack Course](https://www.codecademy.com/learn/paths/full-stack-engineer-career-path).
+
+## How it works
+
+Jamming allows you to sign in to your spoify account and search for music to create playlists.
+
+***NOTE: By default my API client ID is not included, and this wont work without one. To enable functionality create an account with Spotify and register the app. Create a file called "tokens.js" in "/src/util/" and place your client ID as a constant called "spotifyAPIClientID". Make sure you export the constant.***
 
 ## Available Scripts
 
