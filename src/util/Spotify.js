@@ -1,6 +1,8 @@
+import { spotifyAPIClientId } from "./tokens";
 var accessToken;
-const clientID = "9430888836e442498651ef2b1f0c0df9";
-const redirectURI = "https://breezy-cast.surge.sh";
+console.log("file_loaded");
+const clientID = spotifyAPIClientId;
+const redirectURI = "http://localhost:3000";
 export const Spotify = {
   getAccesToken() {
     if (accessToken) {
@@ -18,7 +20,7 @@ export const Spotify = {
       return accessToken;
     } else {
       const accessURL = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURI}`;
-      window.location = accessURL;
+      return (window.location = accessURL);
     }
   },
   async search(term) {
